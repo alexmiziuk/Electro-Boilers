@@ -1,0 +1,622 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Salsa&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+.promo {
+	position: relative;
+	min-height: 84vh;
+	padding: 70px 15px;
+	background: #f0f0f0
+		url("https://remstroiblog.ru/wp-content/uploads/2017/12/e%60lektricheskiy-kotel-3-e1514306167496.jpg") center
+		center/cover no-repeat;
+}
+
+.overlay,
+.manual-overlay,
+.manual-proposal-layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	pointer-events: none;
+}
+
+.container {
+	display: block;
+	margin: 0 auto;
+	max-width: 1024px;
+	position: relative;
+	z-index: 1;
+}
+
+.promo-box {
+	min-height: 400px;
+}
+
+.promo-title,
+.advantages-title,
+.manual-title,
+.consultation-title,
+.consultation-title-doubler {
+	margin-top: 20px;
+	font-size: 35px;
+	line-height: 51px;
+	font-weight: 700;
+}
+
+.promo-text,
+.advantages-list-text,
+.manual-text,
+.consultation-answer {
+	display: block;
+	margin-top: 25px;
+	width: 500px;
+	font-size: 16px;
+	font-weight: 400 !important;
+	line-height: 26px;
+}
+
+.promo-title,
+.promo-text,
+.manual-title,
+.manual-text-title,
+.manual-text,
+.manual-proposal-text {
+	position: relative;
+	z-index: 2;
+	color: #fff;
+}
+
+.promo-btn,
+.advantages-btn,
+.manual-btn,
+.consultation-btn {
+	margin-top: 50px;
+	display: inline-block;
+	padding: 10px 28px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #fede08;
+	z-index: 100;
+	color: black;
+	border-radius: 20px;
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease;
+	font-size: 20px;
+	font-weight: 700;
+	cursor: pointer;
+	border: 2px solid #fede08;
+}
+
+.promo-btn:hover,
+.advantages-btn:hover,
+.manual-btn:hover,
+.consultation-btn:hover {
+	background-color: #cfb50a;
+}
+
+.advantages {
+	padding: 70px 15px;
+}
+
+.advantages-list {
+	display: grid;
+	margin-top: 50px;
+	list-style-type: none;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 30px 40px;
+}
+
+.advantages-list-box-img {
+	display: flex;
+	width: 110px;
+	height: 110px;
+	border-radius: 100%;
+	border: 3px solid #348b4c;
+	align-items: center;
+	justify-content: center;
+}
+
+.advantages-list-icon {
+	height: 80%;
+	width: 80%;
+}
+
+.advantages-list-title {
+	margin-top: 20px;
+	font-size: 25px;
+	font-weight: 700;
+	color: #0d2d16 !important;
+}
+
+.advantages-list-text {
+	margin-top: 20px;
+	color: #0d2d16;
+	width: 100%;
+}
+
+.advantages-list-link,
+.manual-proposal-link,
+.consultation-link {
+	cursor: pointer;
+	color: #b75b1a;
+	z-index: 2;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	font-size: 17px;
+	font-weight: 700;
+	border-bottom: 1px solid !important;
+	border-bottom-color: #b75b1a;
+}
+
+.advantages-list-link:hover,
+.manual-proposal-link:hover,
+.consultation-link:hover {
+	color: #a45217;
+	border-bottom: 1px solid !important;
+	border-bottom-color: #b75b1a;
+}
+
+.square {
+	height: 70%;
+	width: 70%;
+}
+
+.advantages-btn,
+.manual-btn {
+	display: block;
+	margin: 50px auto 0 auto;
+	width: 177px;
+}
+
+.manual {
+	position: relative;
+	padding: 70px 15px;
+	background: url("../resources/backgrounds/boiler-store.jpeg") center center/cover no-repeat;
+}
+
+.manual-overlay {
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+.manual-block {
+	display: grid;
+	margin-top: 50px;
+	grid-template-columns: 1.4fr 0.6fr;
+	gap: 0 30px;
+}
+
+.manual-items {
+	list-style-type: none;
+}
+
+.manual-box {
+	display: grid;
+	grid-template-columns: 0.3fr 1.7fr;
+	gap: 0 20px;
+	margin-top: 20px;
+}
+
+.manual-text-title,
+.consultation-questions-title {
+	font-size: 25px;
+	font-weight: 500;
+}
+
+.manual-text {
+	margin-top: 16px;
+	margin-bottom: 25px;
+}
+
+.manual-text-fourth {
+	margin-bottom: 0;
+}
+
+.manual-proposal {
+	display: grid;
+	align-items: center;
+	transition: transform 0.3s ease-in-out;
+}
+
+.manual-proposal-layer {
+	background-color: rgba(88, 81, 81, 0.9);
+	border-radius: 9px;
+}
+
+.manual-img-container {
+	display: flex;
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	border: 3px solid #348b4c;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	position: relative;
+	overflow: hidden;
+}
+
+.manual-img-window {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 54%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	flex-direction: column;
+	height: 174px;
+}
+
+.manual-icons {
+	width: 70%;
+	height: 65%;
+}
+
+.manual-icons-effect1 {
+	height: 50px;
+	width: 46px;
+	transition: all 0.3s;
+}
+
+.manual-icons-effect2 {
+	height: 50px;
+	width: 46px;
+	margin-top: 12px;
+}
+
+.manual-icons-fourth {
+	width: 59px;
+	height: 53px;
+	margin-left: 6px;
+}
+
+.manual-icon2-2-top {
+	margin-top: 9px;
+}
+
+.manual-icon4-1-top {
+	margin-top: 4px;
+}
+
+.manual-icon4-2-top {
+	margin-top: 5px;
+}
+
+.manual-item:hover .manual-box .manual-img-container .manual-img-window .manual-icons-effect1 {
+	margin-top: 62px;
+}
+
+.manual-item:hover .manual-box .manual-img-container .manual-img-window .manual-icon2-1-top {
+	margin-top: 59px;
+}
+
+.manual-proposal-box-text {
+	position: relative;
+	margin: 0 auto;
+	cursor: pointer;
+	max-width: 610px;
+}
+
+.manual-proposal-box-text::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 2px solid transparent;
+	border-radius: 9px;
+	box-sizing: border-box;
+	pointer-events: none;
+	animation: running-line 10s linear;
+	z-index: 2;
+	opacity: 0;
+	transition: all 2s ease;
+}
+
+.manual-proposal-box-text:hover::after {
+	border-bottom-color: orangered;
+	opacity: 1;
+	animation: running-line 10s linear;
+}
+
+@keyframes running-line {
+	0% {
+		transform: scaleX(0);
+		transform-origin: left;
+	}
+
+	50% {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
+}
+
+.manual-proposal-box-link {
+	text-decoration: none;
+	color: white;
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+}
+
+.manual-proposal-text {
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 700;
+	padding: 20px;
+}
+
+.manual-accent-font {
+	font-size: 18px;
+}
+
+.manual-btn {
+	width: 181px;
+}
+
+.consultation {
+	padding: 70px 15px;
+}
+
+.consultation-block {
+	display: grid;
+	grid-template-columns: 0.8fr 1.2fr;
+	gap: 0 40px;
+	margin-top: 50px;
+}
+
+.consultation-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.6fr 1.4fr;
+}
+
+.consultation-img {
+	position: absolute;
+	width: 431px;
+	height: 436px;
+	left: -53px;
+	top: 209px;
+}
+
+.consultation-title {
+	margin: 0px 25px 25px 25px;
+	color: #0d2d16;
+	width: 351px;
+}
+
+.consultation-title-doubler {
+	display: none;
+	color: #0d2d16;
+}
+
+.consultation-divider {
+	width: 100%;
+	height: 1px;
+	background-color: #b3a7a7;
+}
+
+.consultation-questions {
+	list-style-type: none;
+}
+
+.consultation-title-box {
+	display: grid;
+	grid-template-columns: 0.2fr 1.8fr;
+	gap: 0 12px;
+}
+
+.consultation-details {
+	padding-left: 63px;
+}
+
+.consultation-questions-title {
+	margin: 30px 0 25px 0;
+	color: #222;
+	line-height: 35px;
+	list-style: none;
+	transition: color 0.3s ease-in-out;
+	position: relative;
+}
+
+.consultation-questions-title-fourth {
+	margin-bottom: 0;
+}
+
+.consultation-questions-title::before {
+	content: attr(data-number);
+	display: inline-block;
+	width: 45px;
+	height: 40px;
+	color: #222;
+	text-align: center;
+	line-height: 39px;
+	left: -63px;
+	top: 2%;
+	font-size: 36px;
+	font-weight: 900;
+	transition: color 0.3s ease-in-out;
+	position: absolute;
+}
+
+.consultation-answer {
+	color: #222;
+	width: 100%;
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+
+.consultation-answer-fourth {
+	margin: 25px 0 0 0;
+}
+
+.consultation-btn {
+	width: 259px;
+}
+
+.consultation-btn-doubler {
+	display: none;
+	width: 259px;
+	margin: 60px auto;
+}
+
+.consultation-container-img {
+	display: none;
+}
+
+.consultation-details {
+	cursor: pointer;
+}
+
+.consultation-questions-title:hover {
+	color: rgba(0, 0, 0, 0.695);
+}
+
+.consultation-details[open] .consultation-questions-title {
+	color: #b75b1a;
+}
+
+.manual-text-fourth {
+	margin-bottom: 25px;
+}
+
+.consultation-block {
+	display: grid;
+	grid-template-columns: 0.8fr 1.2fr;
+	gap: 0;
+	margin-top: 40px;
+}
+
+.consultation-divider {
+	margin: 0 auto;
+	width: 70%;
+}
+
+.consultation-title-doubler {
+	display: none;
+	color: #0d2d16;
+}
+
+@media (max-width: 1367px) {
+	.promo {
+		min-height: 500px;
+	}
+}
+
+@media (max-width: 948px) {
+	.manual-block {
+		grid-template-columns: 1fr;
+		gap: 40px 30px;
+	}
+
+	.consultation-img {
+		position: absolute;
+		width: 411px;
+		height: 438px;
+		left: -53px;
+		top: 210px;
+	}
+}
+
+@media (max-width: 895px) {
+	.consultation-container {
+		display: none;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	.consultation-title-doubler {
+		display: block;
+	}
+
+	.consultation-block {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 0;
+		margin-top: 50px;
+	}
+
+	.consultation-container-img {
+		display: none;
+	}
+
+	.consultation-btn {
+		display: block;
+		margin: 60px auto 0 auto;
+	}
+}
+
+@media (max-width: 640px) {
+	.advantages-title,
+	.manual-title,
+	.consultation-title-doubler {
+		text-align: center;
+	}
+
+	.advantages-list-text {
+		text-align: center;
+	}
+
+	.advantages-list {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		gap: 25px 0px;
+	}
+
+	.advantages-list-box-img {
+		margin: 0 auto;
+	}
+
+	.advantages-list-title {
+		text-align: center;
+	}
+
+	.manual-text {
+		width: 100%;
+	}
+}
+
+@media (max-width: 524px) {
+	.promo {
+		min-height: 4px;
+	}
+
+	.promo-text {
+		width: 100%;
+	}
+
+	.manual-box {
+		grid-template-columns: 1fr;
+		gap: 18px 20px;
+	}
+
+	.manual-img-container {
+		margin: 0 auto;
+	}
+
+	.manual-text-title {
+		text-align: center;
+	}
+
+	.manual-text {
+		text-align: center;
+	}
+}
+
+@media (max-width: 354px) {
+	.consultation-btn {
+		padding: 10px 16px;
+	}
+}
