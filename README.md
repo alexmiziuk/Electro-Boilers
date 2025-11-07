@@ -1,6 +1,6 @@
 # 🔥 Thermo Alliance — Electric Boilers Landing Page
 
-A promotional one-page website for **Опалення плюс інтернет магазин опалювальної техніки Детальніше** electric boilers.  
+A promotional one-page website for **Опалення плюс інтернет магазин опалювальної техніки** electric boilers.  
 This landing page presents product information and redirects users to the main **Heating Plus** company website for purchases.
 
 ---
@@ -27,7 +27,7 @@ It is designed as part of a marketing campaign to attract potential customers to
 - Easy setup and lightweight performance  
 
 ## 📍 Client
-**Опалення плюс інтернет магазин опалювальної техніки - online store**
+**Опалення плюс - online store**
 
 ---
 
